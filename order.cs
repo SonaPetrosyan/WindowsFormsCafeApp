@@ -2725,7 +2725,11 @@ namespace WindowsFormsApp4
                 }
             }
         }
-
+        /// <summary>
+        /// ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ManagerBox_Leave(object sender, EventArgs e)
         {
             if (ManagerBox.Text == string.Empty) ManagerBox.Text = "կառավ․քարտ";
