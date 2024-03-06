@@ -2739,6 +2739,10 @@ namespace WindowsFormsApp4
             int tick = int.Parse(bill.Text);
             DateTime dat = DateTime.Now;
             connection.Open();
+            ////
+
+
+            /////
             string query = $"UPDATE `ticket_information` SET `PaidMoney` = @PaidMoney, `Tipmoney` = @Tipmoney, `DataEnd` = @DataEnd " +
                 $" WHERE `Seans` = @Seans AND `Ticket` = @Ticket  AND `Nest` = @Nest  AND `Restaurant` =@Rest ";
             using (MySqlCommand command = new MySqlCommand(query, connection))
